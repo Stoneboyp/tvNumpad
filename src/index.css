@@ -6,7 +6,6 @@
     line-height: 1.5;
     font-weight: 400;
     background-color: #242424;
-
     font-synthesis: none;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
@@ -36,10 +35,5 @@ button {
     cursor: pointer;
     transition: border-color 0.25s;
 }
-button:hover {
-    border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-    outline: 4px auto -webkit-focus-ring-color;
-}
+
+button: focus;
