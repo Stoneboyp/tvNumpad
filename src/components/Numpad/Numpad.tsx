@@ -12,7 +12,7 @@ const Numpad: React.FC<Props> = ({ setShowNumPad }) => {
     const [phoneNumber, setPhoneNumber] = useState("");
     const [isValid, setIsValid] = useState(true);
     const [isPrivacy, setIsPrivacy] = useState(false);
-    const [clickedButton, setClickedButton] = useState(null);
+    const [clickedButton, setClickedButton] = useState<null | number>(null);
     const [isRequestAccepted, setIsRequestAccepted] = useState(false);
 
     const handlePhoneNumberChange = () => {
@@ -82,9 +82,9 @@ const Numpad: React.FC<Props> = ({ setShowNumPad }) => {
                                                 prev.slice(0, -1)
                                             );
                                         } else {
-                                            handleButtonClick(item);
+                                            handleButtonClick(item as string);
                                         }
-                                        setClickedButton(item);
+                                        setClickedButton(item as number);
                                     }}
                                     className={
                                         item === "Стереть"
