@@ -8,7 +8,7 @@ interface Props {
     setShowNumPad: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
-const Numpad: React.FC<Props> = ({ showNumPad, setShowNumPad }) => {
+const Numpad: React.FC<Props> = ({ setShowNumPad }) => {
     const [phoneNumber, setPhoneNumber] = useState("");
     const [isValid, setIsValid] = useState(true);
     const [isPrivacy, setIsPrivacy] = useState(false);
@@ -22,7 +22,6 @@ const Numpad: React.FC<Props> = ({ showNumPad, setShowNumPad }) => {
 
             var requestOptions = {
                 method: "GET",
-                redirect: "follow",
                 headers: myHeaders,
             };
 

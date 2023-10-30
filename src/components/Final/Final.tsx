@@ -1,8 +1,6 @@
 import React from "react";
 
-interface Props {}
-
-const Final: React.FC<Props> = ({}) => {
+const Final: React.FC = () => {
     return (
         <div className="flex flex-col items-center h-full justify-center">
             <div className="text-3xl mb-6 ">ЗАЯВКА ПРИНЯТА</div>

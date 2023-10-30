@@ -1,8 +1,6 @@
 import React from "react";
 
-interface Props {}
-
-const QrCode: React.FC<Props> = ({}) => {
+const QrCode: React.FC = () => {
     return (
         <div className="">
             <img className="max-w-[150px]" src="/qr.png" />

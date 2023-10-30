@@ -3,9 +3,7 @@ import QrCode from "../QrCode/QrCode";
 import Numpad from "../Numpad/Numpad";
 import Video from "./Video/Video";
 
-interface Props {}
-
-const Home: React.FC<Props> = ({}) => {
+const Home: React.FC = () => {
     const [showNumPad, setShowNumPad] = useState(true);
     return (
         <div>
